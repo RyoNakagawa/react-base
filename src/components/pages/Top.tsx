@@ -4,7 +4,11 @@ import classNames from 'classnames';
 import logo from '../../logo.svg';
 import styles from './Top.module.scss';
 
-const Top: React.FC = () => {
+interface IProps {
+  text: string;
+}
+
+export const Top: React.FC<IProps> = (props) => {
   return (
     <div className={classNames(styles.App)}>
       <header className={classNames(styles.AppHeader)}>
@@ -18,10 +22,9 @@ const Top: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {props.text}
         </a>
       </header>
     </div>
   )
 }
-export default Top;
