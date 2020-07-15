@@ -26,5 +26,5 @@ export const Top: React.FC<IProps> = (props) => {
         </a>
       </header>
     </div>
-  )
-}
+  );
+};

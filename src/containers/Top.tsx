@@ -6,22 +6,22 @@ import { Top } from '../components/pages/Top';
 import { initAction } from '../actions';
 import { IState } from '../states/Top';
 
-const mapStateToProps = ({ top }: { top: IState}) => ({
+const mapStateToProps = ({ top }: { top: IState }) => ({
   text: top.text,
-})
+});
 
 function mapDispatchToProps(dispatch: Dispatch) {
-    return {
-      init: (text: string) => dispatch(initAction({ text }))
-    }
+  return {
+    init: (text: string) => dispatch(initAction({ text })),
+  };
 }
 
 const TopContainer: React.FC = (props: any) => {
   useEffect(() => {
     props.init('Learn React');
-  })
+  });
 
-  return <Top {...props} />
-}
+  return <Top {...props} />;
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(TopContainer);

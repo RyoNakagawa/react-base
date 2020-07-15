@@ -6,5 +6,5 @@ export interface InitActionPayload {
 
 const actionCreator = actionCreatorFactory();
 
-export const InitActionType = 'INIT_TOP_PAGE'
+export const InitActionType = 'INIT_TOP_PAGE';
 export const initAction = actionCreator<InitActionPayload>(InitActionType);

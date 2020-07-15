@@ -8,7 +8,7 @@ function App() {
     <Switch>
       <Route exact path="/" component={Top} />
     </Switch>
-  )
+  );
 }
 
 export default App;

@@ -5,13 +5,13 @@ export interface IState {
 }
 
 const TopRecord = Record<IState>({
-  text: ''
+  text: '',
 });
 
 class Top extends TopRecord {
-    setText(text: string): Top {
-      return this.set('text', text);
-    }
-};
+  setText(text: string): Top {
+    return this.set('text', text);
+  }
+}
 
-export default Top
+export default Top;
