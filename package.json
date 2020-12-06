@@ -36,7 +36,9 @@
     "lint": "eslint --ext .ts,.tsx ./src",
     "lint:fix": "eslint --ext .ts,.tsx ./src --fix",
     "tsm": "tsm src --nameFormat none",
-    "tsm:watch": "tsm src --nameFormat none --watch"
+    "tsm:watch": "tsm src --nameFormat none --watch",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "browserslist": {
     "production": [
@@ -51,9 +53,15 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.1.9",
+    "@storybook/addon-essentials": "^6.1.9",
+    "@storybook/addon-links": "^6.1.9",
+    "@storybook/node-logger": "^6.1.9",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.9",
     "@typescript-eslint/eslint-plugin": "^3.6.1",
     "@typescript-eslint/parser": "^3.6.1",
-    "eslint": "^7.4.0",
+    "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
